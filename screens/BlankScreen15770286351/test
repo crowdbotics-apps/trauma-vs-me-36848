@@ -1,0 +1,59 @@
+import React, { Component } from 'react'
+import { AppRegistry, View, Text, Image, StyleSheet } from 'react-native'
+class App extends Component {
+  state = {
+      title: 'My App',
+  };
+  render() {
+      return (
+          <View style={styles.container}>
+              <Text style={styles.title}>{this.state.title}</Text>
+              <Text style={styles.text}>
+              <Image
+                 source={{uri: 'https://raw.githubusercontent.com/kirbysayshi/react-native-hello-world/master/logo.png'}}
+
+/>
+
+</Text>
+
+</View>
+
+);
+
+}
+
+const styles = StyleSheet.create({
+
+container: {
+
+flex: 1,
+
+justifyContent: "center",
+
+alignItems: "stretch",
+
+padding: 20
+
+},
+
+title: {
+
+fontSize: 30,
+
+color: 'white',
+
+},
+
+text: {
+
+color: 'black',
+
+fontSize: 15
+
+}
+
+})
+
+AppRegistry.registerComponent('App', () => App)
+
+
